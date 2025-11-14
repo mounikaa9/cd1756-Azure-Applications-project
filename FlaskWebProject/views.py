@@ -10,6 +10,7 @@ from FlaskWebProject import app, db
 from FlaskWebProject.forms import LoginForm, PostForm
 from flask_login import current_user, login_user, logout_user, login_required
 from FlaskWebProject.models import User, Post
+from FlaskWebproject import LOG
 import msal
 import uuid
 
@@ -26,6 +27,8 @@ def home():
         title='Home Page',
         posts=posts
     )
+
+
 
 @app.route('/new_post', methods=['GET', 'POST'])
 @login_required
@@ -57,6 +60,8 @@ def post(id):
         imageSource=imageSourceUrl,
         form=form
     )
+
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -99,6 +104,7 @@ def authorized():
         user = User.query.filter_by(username="admin").first()
         login_user(user)
         _save_cache(cache)
+        LOG.info('INFO:User Logged In...')
     return redirect(url_for('home'))
 
 @app.route('/logout')
