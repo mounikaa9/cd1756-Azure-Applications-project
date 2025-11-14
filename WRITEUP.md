@@ -18,10 +18,14 @@ VM: Deploying on a VM means you must manage the server, install packages, apply 
 App Service: App Service simplifies the workflow by supporting direct GitHub deployments and automatic updates. You don’t have to worry about server maintenance, so you can focus only on your application code.
 
 - *Choose the appropriate solution (VM or App Service) for deploying the app*
-  *The appropriate solution for deploying this application is Azure App Service. It provides a managed environment designed for running web applications without the need to configure or maintain a full server. App Service also supports direct deployment from GitHub, making updates and continuous delivery much easier. It meets all the essential hosting and workflow needs of this CMS project.
+  
+The appropriate solution for deploying this application is Azure App Service. 
+It provides a managed environment designed for running web applications without the need to configure or maintain a full server.
+App Service also supports direct deployment from GitHub, making updates and continuous delivery much easier. It meets all the essential hosting and workflow needs of this CMS project.
  
 - *Justify your choice*
-- Azure App Service is selected because it reduces the operational effort compared to using a VM. It handles platform updates, scaling, and availability automatically, allowing more focus on the application itself rather than server management. The pricing model is also more efficient for a lightweight web app that doesn’t require full OS-level control. Overall, it offers a simpler, more reliable, and more streamlined deployment setup for this project.
+  
+ Azure App Service is selected because it reduces the operational effort compared to using a VM. It handles platform updates, scaling, and availability automatically, allowing more focus on the application itself rather than server management. The pricing model is also more efficient for a lightweight web app that doesn’t require full OS-level control. Overall, it offers a simpler, more reliable, and more streamlined deployment setup for this project.
 
 ### Assess app changes that would change your decision.
 
