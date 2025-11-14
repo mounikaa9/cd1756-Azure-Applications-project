@@ -4,7 +4,8 @@
 
 *For **both** a VM or App Service solution for the CMS app:*
 - *Analyze costs, scalability, availability, and workflow*
-* 1.COST
+  
+1.COST
 VM: A Virtual Machine is more expensive because you pay for the whole server all the time, even when the app is not heavily used. You also spend extra time and effort maintaining the OS, updates, and security, which adds to the overall cost.
 App Service: App Service is cheaper for small web apps because you only pay for the hosting plan and not a full machine. Since Azure manages the platform, there are no hidden costs for maintenance or system administration.
 2.SCALABILITY
